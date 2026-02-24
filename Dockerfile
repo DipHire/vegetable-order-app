@@ -1,6 +1,6 @@
 FROM node:latest
 
-WORKDIR /vegetable-app
+WORKDIR /Vegetable_app
 
 COPY package*.json ./
 
@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["node", "app.js"]
+CMD ["node","app.js"]
