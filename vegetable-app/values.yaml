@@ -1,11 +1,11 @@
-namespace: omkar-ns
+namespace: dip-ns
 
 deployment:
   labels:
     app: vegetable
     replicas: 5
     name: vegetable
-    repository: omkartakalkar/vegetable-app
+    repository: diphire/vegetable-app
     tag: v2.0.0
     containerPort: 3000
 
