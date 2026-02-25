@@ -1,15 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: omkar-deployment
-  namespace: omkar-ns
+  name: vegetable-deployment
+  namespace: dip-ns
 
 spec:
   replicas: 5
   selector:
     matchLabels:
       app: vegetable
-  
+
   template:
     metadata:
       labels:
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: vegetable
-          image: omkartakalkar/vegetable-app:v2.0.0
+          image: bhagwat07/vegetable-app:v2.1.0
           ports:
             - containerPort: 3000
           env:
