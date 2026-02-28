@@ -1,7 +1,7 @@
 namespace: dip-ns
 
 # Veg Deployment
-replicas: 4
+replicas: 6
 deployment:
   labels:
     app: vegetable
@@ -27,7 +27,7 @@ service:
 
 #MongoDB Deployment
 mongodb:
-  replicas: 2
+  replicas: 1
   serviceName: mongodb-svc
   app: mongodb
   containerName: mongodb-container
