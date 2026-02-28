@@ -49,12 +49,7 @@ mongodb_service:
   clusterIP: None
 
 # StorageClass: veg-sc
-StorageClass:
-  provisioner: ebs.csi.aws.com
-  type: gp3
-  reclaimPolicy: Retain
-  volumeBindingMode: WaitForFirstConsumer
-
+ 
 #veg-mongodb-pvc
 pvc:
   accessMode: ReadWriteOnce
